@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prattush Kumar Sethi - PNB</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://ekl4vy4.github.io/Pnb-message/surf_background.gif') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .message-box {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 2s ease-out;
+      text-align: center;
+    }
+    .line {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: #222;
+      opacity: 0;
+      animation: slideUp 1s forwards;
+    }
+    .line:nth-child(1) { animation-delay: 0.5s; }
+    .line:nth-child(2) { animation-delay: 1s; }
+
+    .buttons {
+      margin-top: 20px;
+      opacity: 0;
+      animation: slideUp 1s forwards;
+      animation-delay: 1.5s;
+    }
+    .buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      transition: background 0.3s ease;
+    }
+    .whatsapp { background-color: #25D366; }
+    .whatsapp:hover { background-color: #1da851; }
+    .linkedin { background-color: #0077b5; }
+    .linkedin:hover { background-color: #005c8c; }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="message-box">
+    <div class="line">Hello! This is <strong>Prattush Kumar Sethi</strong>, Manager, <strong>Punjab National Bank</strong>.</div>
+    <div class="line">You can contact me for business loans, Personal loans, Housing loans, Vehicle loans, Current accounts, Savings account and inquire about other bank products.</div>
+    <div class="buttons">
+      <a class="whatsapp" href="https://wa.me/917749974252" target="_blank">Message on WhatsApp</a>
+      <a class="linkedin" href="https://www.linkedin.com/in/prattushk1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Connect on LinkedIn</a>
+    </div>
+  </div>
+</body>
+</html>
