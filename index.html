@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="4;url=landing.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading - Launch Page</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('ghibli_forest_bar_background.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .loader-container {
+      width: 95vw;
+      max-width: 100%;
+      height: 35px;
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .loader-bar {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(90deg, #43cea2, #185a9d);
+      animation: load 4s ease-in-out forwards;
+    }
+
+    @keyframes load {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+
+    .loading-text {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #dcedc8;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    @media (max-width: 600px) {
+      .loading-text {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader-bar"></div>
+  </div>
+  <div class="loading-text">So begins our journey...</div>
+</body>
+</html>
